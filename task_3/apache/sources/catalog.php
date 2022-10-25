@@ -30,7 +30,7 @@
             <?php
                 $mysqli = new mysqli("db", "mysql", "123456", "app_db");
                 $result = $mysqli->query("SELECT * FROM book");
-                foreach ($result as $row){
+                foreach ($result as $row) {
                     echo "
                     <div class='card' style='width: 18rem;'>
                     <div class='card-body'>
