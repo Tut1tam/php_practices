@@ -2,27 +2,26 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- TABLES
---
+-- --------------------------------------------------------
 
 --
--- TABLE 'BOOKS'
+-- TABLE `book`
 --
 
 CREATE TABLE `book` (
-    `id` int NOT NULL,
-    `name` varchar(256) NOT NULL,
-    `author` varchar(256) NOT NULL,
+  `id` int NOT NULL,
+  `name` varchar(256) NOT NULL,
+  `author` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- DUMP BOOKS
+-- DUMP `book`
 --
 
 INSERT INTO `book` (`id`, `name`, `author`) VALUES
@@ -32,36 +31,40 @@ INSERT INTO `book` (`id`, `name`, `author`) VALUES
 (4, 'Шантарам', 'Грегори Дэвид Робертс'),
 (5, 'Три товарища', 'Эрих Мария Ремарк');
 
+-- --------------------------------------------------------
+
 --
--- TABLE USER 
+-- TABLE `user`
 --
 
 CREATE TABLE `user` (
-    `id` int NOT NULL,
-    `login` varchar(256) NOT NULL,
-    `password` varchar(256) NOT NULL,
-    `name` varchar(30) NOT NULL
+  `id` int NOT NULL,
+  `login` varchar(256) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `name` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- DUMP USER
+-- DUMP `user`
 --
 
 INSERT INTO `user` (`id`, `login`, `password`, `name`) VALUES
 (1, 'admin', 'AAAAA', 'admin');
 
+-- --------------------------------------------------------
+
 --
--- TABLE LIBRARIES
+-- TABLE `library`
 --
 
 CREATE TABLE `library` (
-    `id` int NOT NULL,
-    `name` varchar(256) NOT NULL,
-    `address` varchar(256) NOT NULL
+  `id` int NOT NULL,
+  `name` varchar(256) NOT NULL,
+  `address` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- DUMP LIBRARIES
+-- DUMP `library`
 --
 
 INSERT INTO `library` (`id`, `name`, `address`) VALUES
@@ -74,43 +77,41 @@ INSERT INTO `library` (`id`, `name`, `address`) VALUES
 --
 
 --
--- TABLE INDEX `book`
+-- INDEX `book`
 --
-
 ALTER TABLE `book`
   ADD PRIMARY KEY (`id`);
 
 --
--- TABLE INDEX `user`
+-- INDEX `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- TABLE INDEX `library`
+-- INDEX `library`
 --
 ALTER TABLE `library`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT FOR TABLES
+-- AUTO_INCREMENT 
 --
 
 --
--- AUTO_INCREMENT FOR `books`
+-- AUTO_INCREMENT `book`
 --
-
 ALTER TABLE `book`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT FOR `user`
+-- AUTO_INCREMENT `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT FOR `library`
+-- AUTO_INCREMENT `library`
 --
 ALTER TABLE `library`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
@@ -119,3 +120,8 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+--
+-- TABLE
+--
