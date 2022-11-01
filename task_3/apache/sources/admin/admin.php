@@ -33,9 +33,9 @@
             </div>
             </nav>
     <div id="header-featured">
-        <div id="banner-wrapper">
+        <div id="banner-wrapper" style='display:flex; align-items:center;justify-content:center;'>
         <?php
-            echo "<span class='badge text-bg-primary'>Тут находиться панель администратора</span>";            
+            echo "<span class='badge text-bg-primary' style='weight: 50px; height: 50px;display:flex; align-items:center;justify-content:center;'>Тут находиться панель администратора</span>";         
         ?>
         </div>
     </div>
