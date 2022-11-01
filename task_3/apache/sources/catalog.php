@@ -18,7 +18,7 @@
                     <a class="nav-link" href="main.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="catalog.php">Каталог<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="catalog.php"><strong>Каталог</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="aboutus.html">О нас</a>
@@ -33,13 +33,13 @@
             </div>
             </nav>
         <div id="header-featured">
-            <div id="banner-wrapper">
+            <div id="banner-wrapper" style="display:flex;">
             <?php
                 $mysqli = new mysqli("db", "mysql", "123456", "app_db");
                 $result = $mysqli->query("SELECT * FROM book");
                 foreach ($result as $row) {
                     echo "
-                    <div class='card' style='width: 18rem;'>
+                    <div class='card' style='width: 18rem; margin: 5px; border-radius: 5px;'>
                         <div class='card-body'>
                             <h5 class='card-title'>{$row["name"]}</h5>
                             <p class='card-text'>{$row['author']}</p>

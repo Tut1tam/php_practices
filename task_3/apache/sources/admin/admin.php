@@ -27,12 +27,12 @@
                     <a class="nav-link" href="../libraries.php">Контакты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/admin.php">Панель Администратора<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/admin/admin.php"><strong>Панель Администратора</strong></a>
                 </li>
                 </ul>
             </div>
             </nav>
-    <div id="header-featured">
+    <div>
         <div id="banner-wrapper" style='display:flex; align-items:center;justify-content:center;'>
         <?php
             echo "<span class='badge text-bg-primary' style='weight: 50px; height: 50px;display:flex; align-items:center;justify-content:center;'>Тут находиться панель администратора</span>";         

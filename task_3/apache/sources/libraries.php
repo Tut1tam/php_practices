@@ -24,7 +24,7 @@
                     <a class="nav-link" href="aboutus.html">О нас</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="libraries.php">Контакты<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="libraries.php"><strong>Контакты</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/admin.php">Панель Администратора</a>
@@ -33,13 +33,13 @@
             </div>
             </nav>
     <div id="header-featured">
-        <div id="banner-wrapper">
+        <div id="banner-wrapper" style='display: flex;'>
             <?php
                 $mysqli = new mysqli("db", "mysql", "123456", "app_db");
                 $result = $mysqli->query("SELECT * FROM library");
                 foreach ($result as $row) {
                     echo "
-                    <div class='card' style='width: 18rem;'>
+                    <div class='card' style='width: 18rem; margin: 5px; border-radius: 15px;'>
                         <div class='card-body'>
                             <h5 class='card-title'>{$row["name"]}</h5>
                             <p class='card-text'>{$row['address']}</p>
