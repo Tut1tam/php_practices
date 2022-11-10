@@ -40,14 +40,14 @@
             case 'book':
                 echo "
                     <div class='d-flex flex-column min-vh-100 justify-content-center align-items-center'>
-                        <form action='/admin/crud/create.php' method='GET'>
+                        <form action='/admin/api/create.php' method='GET'>
                             <div class='mb-3'>
                                 <label for='name' class='form-label'>book name</label>
-                                <input name='name' type='text' class='form-control' id='name' placeholder='Квартиры'>
+                                <input name='name' type='text' class='form-control' id='name' placeholder='book name'>
                             </div>
                             <div class='mb-3'>
                                 <label for='author' class='form-label'>book author</label>
-                                <input name='author' type='number' class='form-control' id='author' placeholder='1000000'>
+                                <input name='author' type='text' class='form-control' id='author' placeholder='author'>
                             </div>
                             <input type='hidden' name='type' value='$type'>
                             <button type='submit' class='btn btn-primary'>Change</button>
@@ -58,14 +58,14 @@
             case 'library':
                 echo "
                         <div class='d-flex flex-column min-vh-100 justify-content-center align-items-center'>
-                            <form action='/admin/crud/create.php' method='GET'>
+                            <form action='/admin/api/create.php' method='GET'>
                                 <div class='mb-3'>
                                     <label for='name' class='form-label'>New name</label>
-                                    <input name='name' type='text' class='form-control' id='name' placeholder='Royal'>
+                                    <input name='name' type='text' class='form-control' id='name' placeholder='Library'>
                                 </div>
                                 <div class='mb-3'>
                                     <label for='address' class='form-label'>New address</label>
-                                    <input name='address' type='number' class='form-control' id='author' placeholder='5000000'>
+                                    <input name='address' type='text' class='form-control' id='author' placeholder='address'>
                                 </div>
                                 <input type='hidden' name='type' value='$type'>
                                 <button type='submit' class='btn btn-primary'>Change</button>

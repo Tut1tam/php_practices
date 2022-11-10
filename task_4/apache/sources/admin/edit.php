@@ -44,14 +44,14 @@
             case 'book':
                 echo "
                     <div class='d-flex flex-column min-vh-100 justify-content-center align-items-center'>
-                        <form action='/admin/crud/update.php' method='GET'>
+                        <form action='/admin/api/update.php' method='GET'>
                             <div class='mb-3'>
                                 <label for='name' class='form-label'>book name</label>
-                                <input name='name' type='text' class='form-control' id='name' placeholder='Квартиры' value={$result['name']}>
+                                <input name='name' type='text' class='form-control' id='name' placeholder='Name' value={$result['name']}>
                             </div>
                             <div class='mb-3'>
                                 <label for='author' class='form-label'>book author</label>
-                                <input name='author' type='number' class='form-control' id='author' placeholder='119' value={$result['author']}>
+                                <input name='author' type='text' class='form-control' id='author' placeholder='author' value={$result['author']}>
                             </div>
                             <input type='hidden' name='id' value='$id'>
                             <input type='hidden' name='type' value='$type'>
@@ -63,14 +63,14 @@
             case 'library':
                 echo "
                         <div class='d-flex flex-column min-vh-100 justify-content-center align-items-center'>
-                            <form action='/admin/crud/update.php' method='GET'>
+                            <form action='/admin/api/update.php' method='GET'>
                                 <div class='mb-3'>
                                     <label for='name' class='form-label'>library name</label>
-                                    <input name='name' type='text' class='form-control' id='name' placeholder='Квартиры' value={$result['name']}>
+                                    <input name='name' type='text' class='form-control' id='name' placeholder='Library' value={$result['name']}>
                                 </div>
                                 <div class='mb-3'>
                                     <label for='address' class='form-label'>library address</label>
-                                    <input name='address' type='number' class='form-control' id='author' placeholder='20000' value={$result['address']}>
+                                    <input name='address' type='text' class='form-control' id='author' placeholder='address' value={$result['address']}>
                                 </div>
                                 <input type='hidden' name='id' value='$id'>
                                 <input type='hidden' name='type' value='$type'>

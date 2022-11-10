@@ -59,8 +59,8 @@
               <div class='container'>
                 <div class='row'>
                   <div class='col'>
-                  <a href='/admin/edit.php?type=book&id={$row['id']}' class='btn btn-warning'>Изменить</a>
-                  <a href='/admin/crud/delete.php?type=book&id={$row['id']}' class='btn btn-danger'>Удалить</a>
+                  <a href='/admin/edit.php?type=book&id={$row['id']}' class='btn btn-primary'>Изменить</a>
+                  <a href='/admin/api/delete.php?type=book&id={$row['id']}' class='btn btn-primary'></a>Удалить</a>
                   </div>
                 </div>
               </div>
@@ -106,8 +106,8 @@
               <div class='container'>
                 <div class='row'>
                   <div class='col'>
-                    <a href='/admin/edit.php?type=library&id={$row['id']}' class='btn btn-warning'>Изменить</a>
-                    <a href='/admin/crud/delete.php?type=library&id={$row['id']}' class='btn btn-danger'>Удалить</a>
+                    <a href='/admin/edit.php?type=library&id={$row['id']}' class='btn btn-primary'>Изменить</a>
+                    <a href='/admin/api/delete.php?type=library&id={$row['id']}' class='btn btn-primary'>Удалить</a>
                   </div>
                 </div>
               </div>
